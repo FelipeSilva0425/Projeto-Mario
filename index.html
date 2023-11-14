@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="caixa-video-mario">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+
+    </div>
+
+
+    <div class="caixa-principal">
+        <img src="./assets/logo.png" alt="Logo do super mario" class="logo-mario">
+        <p> Encanadores Mario & Luigi - Resolvendo so seus Problemas com Estilo!</p>
+        <p> Você já se encontrou em uma situação de emergência com encanamentos?Vazamentos inesperados ou torneiras que
+            param de pingar?Não se preoucupe.porque estamosaqui para salvar o dia!Apresentamos a vocês os encanadores
+            mais famosos do Reino dos Cogumelos- Nario e Luigi!</p>
+        <button onclick="CliqueiNoBotao()"> Fale Conosco</button>
+
+    </div>
+
+    <img src="./assets/mario.png" alt="logo mario-luigi" class="imagem-luigi">
+
+    <form class="fale-conosco" action="https://formsubmit.co/felipesilvadev0425@gmail.com" method="POST">
+        <h1>Fale Conosco</h1>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html"/>
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input type="email" name="email" placeholder="Seu email">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite o Seu problema aqui" name="informações"></textarea>
+        <button type="submit" onclick="sendform()"> Enviar formulário</button>
+    </form>
+
+
+</body>
+<script>
+
+    let formulario = document.querySelector(".fale-conosco")
+
+    const mascara = document.querySelector(".mascara-form")
+
+    function CliqueiNoBotao() {
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirFormulario() {
+        formulario.style.left = "-320px"
+    }
+
+</script>
+
+
+</html>
