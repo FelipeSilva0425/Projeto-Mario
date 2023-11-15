@@ -109,7 +109,7 @@ button {
 }
 
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 828px) {
     body {
         position: fixed;
         nav-left: 20px;
@@ -126,7 +126,7 @@ button {
 
     .fale-conosco {
         width: 90%;
-        margin-top: 20%;
+        margin :auto;
         background: white;
         display: flex;
         flex-direction: column;
@@ -165,7 +165,7 @@ button {
     }
 
     .logo-mario {
-        max-width: 200px;
+        max-width: 50%;
         display: flex;
         margin-top: 50px;
         flex-direction: auto;
@@ -178,7 +178,8 @@ button {
     }
 
     .imagem-luigi {
-     max-width: 150px;
+     max-width: 50%;
+     margin-bottom: auto;
       
        
     }
